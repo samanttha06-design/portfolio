@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samantha Campos — Sites e pedidos por WhatsApp para pequenos negócios</title>
+<meta name="description" content="Portfólio de sites: cardápio com pedidos por WhatsApp, sites para profissionais da saúde. Simples de atualizar, rápidos e feitos sob medida.">
+<meta name="theme-color" content="#F4EFE6">
+<meta property="og:title" content="Samantha Campos — Portfólio de sites">
+<meta property="og:description" content="Sites simples, bonitos e fáceis de atualizar. Cardápios com pedido por WhatsApp, sites para profissionais da saúde.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&family=Newsreader:ital,wght@0,400;1,400&display=swap">
+<style>
+/* ============================================================
+   EDITAR AQUI: seu WhatsApp (só números, com 55 + DDD)
+   Também aparece nos links lá embaixo (procure por 5563999925150)
+   ============================================================ */
+:root{
+  --bg:#F4EFE6; --ink:#1B1B1B; --muted:#5E5A52; --line:#D9D1C2;
+  --accent:#0F5C63; --accent-ink:#fff; --card:#FBF8F2;
+  --serif:"Fraunces", Georgia, serif; --sans:"DM Sans", system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.15rem;text-decoration:none}
+.top a.cta-sm{font-size:.9rem;font-weight:700;text-decoration:none;border:1.5px solid var(--ink);padding:8px 16px;border-radius:999px}
+.top a.cta-sm:hover{background:var(--ink);color:var(--bg)}
+
+.hero{padding:56px 0 40px}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:18px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,6.2vw,4.2rem);line-height:1.08;max-width:15em;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--accent)}
+.hero p{margin-top:22px;max-width:36em;font-size:1.12rem;color:var(--muted)}
+.hero .row{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent);color:var(--accent-ink);font-size:.98rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--accent)}
+
+section{padding:48px 0}
+h2.sec{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.2rem);margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:32px;max-width:38em}
+
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,470px),1fr))}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.shot{aspect-ratio:16/10;display:flex;flex-direction:column;justify-content:space-between;padding:22px;position:relative;overflow:hidden}
+.shot .bar{display:flex;gap:6px}
+.shot .bar i{width:9px;height:9px;border-radius:50%;background:currentColor;opacity:.35}
+.shot .name{font-size:clamp(1.6rem,4.4vw,2.3rem);line-height:1.05}
+.shot .tag{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.kind{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.body h3{font-family:var(--serif);font-size:1.4rem;line-height:1.2}
+.body p{color:var(--muted);font-size:.98rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.chips span{font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:3px 11px;background:#fff}
+.links{margin-top:auto;padding-top:8px;display:flex;gap:16px;align-items:center}
+.links a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:1px}
+.links .soon{color:var(--muted);font-size:.9rem}
+
+/* mini-visuais de cada site */
+.s1{background:#2D160C;color:#FFE9C9}.s1 .name{font-family:var(--serif)}
+.s1::after{content:"";position:absolute;right:-40px;bottom:-40px;width:190px;height:190px;border-radius:50%;background:#E8A33D;opacity:.9}
+.s2{background:#F7F5F0;color:#1B1B1B;border-bottom:1.5px solid var(--line)}
+.s2 .name{font-family:var(--serif);font-weight:500;font-style:italic;letter-spacing:-.01em}
+.s2 .rule{width:46px;height:2px;background:#1B1B1B;margin:10px 0}
+.s3{background:#2F4BFF;color:#FFE14D}
+.s3 .name{font-family:"Arial Black",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.02em;text-shadow:3px 3px 0 #111}
+.s3::after{content:"";position:absolute;right:20px;bottom:20px;width:70px;height:70px;border:4px solid #111;border-radius:50%;background:#FF6A3D}
+
+.s4{background:#151515;color:#EEF0EE;border-bottom:1.5px solid var(--line)}
+.s4 .name{font-family:"Newsreader",var(--serif);font-weight:400;letter-spacing:-.01em}
+.s4 .name em{color:#5CC7A1;font-style:italic}
+.s4 .tag{color:#8791A3}
+.s4::after{content:"";position:absolute;right:-50px;bottom:-60px;width:210px;height:210px;border-radius:50%;background:#1F7A5C;opacity:.85}
+
+.how{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.how div{border-top:2px solid var(--ink);padding-top:14px}
+.how b{font-family:var(--serif);font-size:1.15rem;display:block;margin-bottom:6px}
+.how p{color:var(--muted);font-size:.96rem}
+
+.contact{background:var(--ink);color:var(--bg);border-radius:24px;padding:48px 28px;text-align:center;margin:30px 0 60px}
+.contact h2{font-family:var(--serif);font-size:clamp(1.7rem,4vw,2.5rem);max-width:16em;margin:0 auto 12px}
+.contact p{opacity:.8;max-width:30em;margin:0 auto 26px}
+.contact .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+footer{padding:0 0 40px;color:var(--muted);font-size:.85rem;text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="logo" href="#">Samantha Campos</a>
+    <a class="cta-sm" href="#contato">Fale comigo</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="eyebrow">Portfólio de sites</p>
+      <h1>Sites simples, bonitos e <em>fáceis de atualizar.</em></h1>
+      <p>Faço sites sob medida para pequenos negócios e profissionais: cardápio com pedido direto no WhatsApp, página de apresentação para psicólogas e páginas para eventos. Tudo leve, no ar e sem complicação.</p>
+      <div class="row">
+        <a class="btn" href="#trabalhos">Ver trabalhos</a>
+        <a class="btn ghost" href="#contato">Pedir um orçamento</a>
+      </div>
+    </div>
+
+    <section id="trabalhos">
+      <h2 class="sec">Trabalhos</h2>
+      <p class="sub">Quatro projetos feitos sob medida, cada um com a cara de quem o usa.</p>
+
+      <div class="grid">
+
+        <!-- 1. CALDOS RAIZ -->
+        <article class="card">
+          <div class="shot s1">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div><div class="tag">Delivery · Caldos</div><div class="name">Caldos Raiz<br>Sabor que abraça</div></div>
+          </div>
+          <div class="body">
+            <span class="kind">Cardápio com pedidos</span>
+            <h3>Caldos Raiz</h3>
+            <p>Site de pedidos para um restaurante de caldos. O cliente monta o carrinho, escolhe entrega ou retirada e o pedido chega pronto no WhatsApp do restaurante. O cardápio, os preços e o "aberto/fechado" são atualizados por uma planilha, sem mexer em código.</p>
+            <div class="chips"><span>Pedido por WhatsApp</span><span>Atualização por planilha</span><span>Visual acolhedor</span></div>
+            <div class="links"><a href="https://caldosraiz.vercel.app" target="_blank" rel="noopener">Ver site ↗</a></div>
+          </div>
+        </article>
+
+        <!-- 2. MARIANA ABDALA -->
+        <article class="card">
+          <div class="shot s2">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div><div class="tag">Psicologia</div><div class="name">Mariana Abdala</div><div class="rule"></div><div class="tag">Psicóloga</div></div>
+          </div>
+          <div class="body">
+            <span class="kind">Site profissional</span>
+            <h3>Mariana Abdala — Psicóloga</h3>
+            <p>Site editorial, minimalista e silencioso, com linguagem de orientação psicanalítica. Uma página só, com texto cuidadoso e um botão direto para o WhatsApp.</p>
+            <div class="chips"><span>Editorial minimalista</span><span>Redação psicanalítica</span><span>Contato por WhatsApp</span></div>
+            <div class="links"><a href="https://marianaabdala.vercel.app" target="_blank" rel="noopener">Ver site ↗</a></div>
+          </div>
+        </article>
+
+        <!-- 3. SAMANTHA CAMPOS PSICOLOGA -->
+        <article class="card">
+          <div class="shot s3">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div><div class="tag">Psicologia online</div><div class="name">Quem é você<br>quando não é…</div></div>
+          </div>
+          <div class="body">
+            <span class="kind">Site profissional</span>
+            <h3>Samantha Campos — Psicóloga</h3>
+            <p>Site de uma página só para atendimento psicológico online a jovens adultos. Visual neo-brutalista com ar retrô dos anos 70 e Y2K, tipografia expressiva e texto reflexivo, para quem não quer um consultório com cara de consultório.</p>
+            <div class="chips"><span>Neo-brutalismo</span><span>Retrô 70s/Y2K</span><span>Identidade visual própria</span></div>
+            <div class="links"><a href="https://samantha-two.vercel.app" target="_blank" rel="noopener">Ver site ↗</a></div>
+          </div>
+        </article>
+
+        <!-- 4. DR. THOMAS KENZO KAWAI -->
+        <article class="card">
+          <div class="shot s4">
+            <div class="bar"><i></i><i></i><i></i></div>
+            <div><div class="tag">Medicina</div><div class="name">Medicina com<br>atenção e <em>clareza.</em></div></div>
+          </div>
+          <div class="body">
+            <span class="kind">Site profissional</span>
+            <h3>Dr. Thomas Kenzo Kawai — Médico</h3>
+            <p>Site de apresentação para consultório médico, com visual escuro e elegante e foto integrada ao fundo. Explica o atendimento, como funciona a consulta, tem perguntas frequentes e leva o paciente direto ao agendamento pelo WhatsApp.</p>
+            <div class="chips"><span>Visual escuro e sóbrio</span><span>Agendamento por WhatsApp</span><span>Perguntas frequentes</span></div>
+            <div class="links"><a href="https://thomaskenzo.vercel.app" target="_blank" rel="noopener">Ver site ↗</a></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="sec">Como eu trabalho</h2>
+      <p class="sub">Sem enrolação e sem depender de você entender de tecnologia.</p>
+      <div class="how">
+        <div><b>1. Conversa</b><p>Entendo o seu negócio, o seu público e o que o site precisa fazer.</p></div>
+        <div><b>2. Proposta visual</b><p>Você vê o site antes de ir ao ar e pede os ajustes.</p></div>
+        <div><b>3. No ar</b><p>Publicado em endereço próprio, rápido e funcionando bem no celular.</p></div>
+        <div><b>4. Fácil de manter</b><p>Cardápio, preços e textos que mudam com frequência podem ser atualizados sem código.</p></div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="contact">
+        <h2>Quer um site assim para o seu negócio?</h2>
+        <p>Me chame no WhatsApp e conte o que você precisa. A primeira conversa é para entender a sua ideia.</p>
+        <a class="btn" href="https://wa.me/5563999925150?text=Ol%C3%A1%2C%20Samantha!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20site." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Samantha Campos · Palmas, Tocantins</footer>
+</div>
+</body>
+</html>
